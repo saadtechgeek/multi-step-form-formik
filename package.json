@@ -1,6 +1,7 @@
 {
   "name": "multi-step-form-formik",
   "version": "0.1.0",
+  "author":"sshahid",
   "private": true,
   "scripts": {
     "dev": "next dev",
