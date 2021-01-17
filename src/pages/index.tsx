@@ -31,9 +31,11 @@ export default function Home() {
           }}
           onSubmit={() => { }}>
           <FormikStep label="Personal Data">
-            <Box>
+            <Box paddingBottom={2}>
               <Field name="firstName" component={TextField} label="First Name" />
+              </Box><Box paddingBottom={2}>
               <Field name="lastName" component={TextField} label="Last Name" />
+              </Box><Box paddingBottom={2}>
               <Field name="millionaire" type="checkbox" component={CheckboxWithLabel} Label={{ label: 'I am a millionaire' }} />
             </Box>
           </FormikStep>
@@ -51,12 +53,12 @@ export default function Home() {
                 otherwise: number().required(),
               }),
             })}
-          ><Box>
+          ><Box paddingBottom={2}>
               <Field name="money" type="number" component={TextField} label="All the money I have" />
             </Box>
           </FormikStep>
           <FormikStep label="More Info">
-            <Box>
+            <Box paddingBottom={2}>
               <Field name="description" component={TextField} label="Description" />
             </Box>
           </FormikStep>
